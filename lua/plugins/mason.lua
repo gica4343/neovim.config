@@ -28,7 +28,9 @@ return {
       lspconfig.rust_analyzer.setup({
         capabilities = capabilities
       })
-
+      lspconfig.html.setup({
+        capabilities = capabilities
+      })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
     end
   }
