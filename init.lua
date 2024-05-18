@@ -5,8 +5,7 @@ vim.cmd("set shiftwidth=2")
 vim.wo.relativenumber = true
 vim.g.mapleader = " "
 vim.wo.fillchars = "eob: "
-vim.g.rust_recommended_style = false
-vim.cmd("set cmdheight=0")
+vim.g.rust_recommended_style = 0
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then

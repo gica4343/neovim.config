@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls" }
+        ensure_installed = { "lua_ls", "clangd", "rust_analyzer", "pylsp" }
       })
     end
   },
@@ -28,10 +28,10 @@ return {
       lspconfig.rust_analyzer.setup({
         capabilities = capabilities
       })
-      lspconfig.html.setup({
+      lspconfig.gopls.setup({
         capabilities = capabilities
       })
-      lspconfig.java_language_server.setup({
+      lspconfig.pylsp.setup({
         capabilities = capabilities
       })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
