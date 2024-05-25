@@ -32,8 +32,11 @@ vim.keymap.set("n", "<C-n>", ":Neotree reveal toggle right<CR>", {})
 
 local config = require("nvim-treesitter.configs")
 config.setup({
-  ensure_installed = { "lua" },
-  highlight = { enable = true },
+  ensure_installed = { "lua", "markdown", "markdown_inline" },
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = { "markdown" }
+  },
   indent = { enable = true },
 })
 vim.cmd("colorscheme nightfox")
