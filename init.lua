@@ -28,7 +28,7 @@ vim.keymap.set("n", "<C-s>", function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
 
-vim.keymap.set("n", "<C-n>", ":Neotree reveal toggle right<CR>", {})
+vim.keymap.set("n", "<leader>n", ":Neotree reveal toggle right<CR>", {})
 
 local config = require("nvim-treesitter.configs")
 config.setup({
@@ -39,5 +39,16 @@ config.setup({
   },
   indent = { enable = true },
 })
-vim.cmd[[colorscheme nightfox]]
+vim.cmd[[colorscheme lackluster]]
 vim.keymap.set("n", "<leader>g", ":Glow<return>")
+
+local mark = require("harpoon.mark")
+local ui = require("harpoon.ui")
+
+vim.keymap.set("n", "<leader>m", mark.add_file)
+vim.keymap.set("n", "<C-m>", ui.toggle_quick_menu)
+
+vim.keymap.set("n", "<C-t>", function() ui.nav_file(1) end)
+vim.keymap.set("n", "<C-n>", function() ui.nav_file(2) end)
+vim.keymap.set("n", "<C-3>", function() ui.nav_file(3) end)
+vim.keymap.set("n", "<C-4>", function() ui.nav_file(4) end)
