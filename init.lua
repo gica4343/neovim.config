@@ -39,5 +39,5 @@ config.setup({
   },
   indent = { enable = true },
 })
-vim.cmd[[colorscheme nordic]]
+vim.cmd[[colorscheme nightfox]]
 vim.keymap.set("n", "<leader>g", ":Glow<return>")
