@@ -39,9 +39,9 @@ config.setup({
   },
   indent = { enable = true },
 })
-vim.cmd[[colorscheme lackluster]]
+vim.cmd[[colorscheme modus]]
 vim.keymap.set("n", "<leader>g", ":Glow<return>")
-
+ 
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 

@@ -27,5 +27,8 @@ return {
       -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
       -- vim.cmd.colorscheme("lackluster-mint")
     end,
- }
+  },
+  {
+    "miikanissi/modus-themes.nvim", priority = 1000
+  }
 }
