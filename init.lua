@@ -6,7 +6,11 @@ vim.wo.relativenumber = true
 vim.g.mapleader = " "
 vim.wo.fillchars = "eob: "
 vim.g.rust_recommended_style = 0
-
+--
+--
+--
+--
+-- LazyVim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -27,9 +31,15 @@ vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 vim.keymap.set("n", "<C-s>", function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
-
-vim.keymap.set("n", "<leader>n", ":Neotree reveal toggle right<CR>", {})
-
+--
+--
+--
+-- netrw
+vim.keymap.set("n", "<leader>n", ":Ex<CR>", {})
+--
+--
+--
+-- Treesitter
 local config = require("nvim-treesitter.configs")
 config.setup({
   ensure_installed = { "lua", "markdown", "markdown_inline" },
@@ -39,9 +49,20 @@ config.setup({
   },
   indent = { enable = true },
 })
-vim.cmd[[colorscheme modus]]
+--
+--
+--
+-- Theme
+vim.cmd[[colorscheme carbonfox]]
+--
+--
+--
+-- Markdown
 vim.keymap.set("n", "<leader>g", ":Glow<return>")
- 
+--
+--
+--
+-- Harpoon
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 
@@ -50,5 +71,5 @@ vim.keymap.set("n", "<C-m>", ui.toggle_quick_menu)
 
 vim.keymap.set("n", "<C-t>", function() ui.nav_file(1) end)
 vim.keymap.set("n", "<C-n>", function() ui.nav_file(2) end)
-vim.keymap.set("n", "<C-3>", function() ui.nav_file(3) end)
-vim.keymap.set("n", "<C-4>", function() ui.nav_file(4) end)
+vim.keymap.set("n", "<C-b>", function() ui.nav_file(3) end)
+vim.keymap.set("n", "<C-,>", function() ui.nav_file(4) end)
