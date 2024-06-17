@@ -1,8 +1,8 @@
-return { 
-  {
-  'nvim-lua/plenary.nvim' 
-  },
-  { 
-  'ThePrimeagen/harpoon' 
-  }
+return {
+	{
+		"nvim-lua/plenary.nvim",
+	},
+	{
+		"ThePrimeagen/harpoon",
+	},
 }
