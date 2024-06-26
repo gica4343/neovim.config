@@ -53,7 +53,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme carbonfox]]
+vim.cmd[[colorscheme onedark]]
 --
 --
 --
