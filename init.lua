@@ -6,6 +6,8 @@ vim.wo.relativenumber = true
 vim.g.mapleader = " "
 vim.wo.fillchars = "eob: "
 vim.g.rust_recommended_style = 0
+vim.g.markdown_recommended_style = 0
+vim.keymap.set("n", "<leader>e", ":noh<CR>", {})
 --
 --
 --
