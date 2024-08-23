@@ -55,7 +55,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme rose-pine]]
+vim.cmd[[colorscheme nordic]]
 --
 --
 --
