@@ -9,6 +9,7 @@ vim.g.rust_recommended_style = 0
 vim.g.markdown_recommended_style = 0
 vim.keymap.set("n", "<leader>e", ":noh<CR>", {})
 vim.opt.termguicolors = true
+vim.opt.guicursor = ""
 --
 --
 --
@@ -56,7 +57,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme monokai_soda]]
+vim.cmd[[colorscheme rose-pine-moon]]
 --
 --
 --
@@ -74,5 +75,5 @@ vim.keymap.set("n", "<leader>h", ui.toggle_quick_menu)
 
 vim.keymap.set("n", "<C-t>", function() ui.nav_file(1) end)
 vim.keymap.set("n", "<C-n>", function() ui.nav_file(2) end)
-vim.keymap.set("n", "<C-b>", function() ui.nav_file(3) end)
-vim.keymap.set("n", "<C-m>", function() ui.nav_file(4) end)
+vim.keymap.set("n", "<C-m>", function() ui.nav_file(3) end)
+--vim.keymap.set("n", "<C-m-->", function() ui.nav_file(4) end)
