@@ -10,7 +10,9 @@ vim.g.markdown_recommended_style = 0
 vim.keymap.set("n", "<leader>e", ":noh<CR>", {})
 vim.opt.termguicolors = true
 vim.opt.guicursor = ""
-vim.cmd("set nocursorline")
+vim.opt.nu = true
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
 --
 --
 --
