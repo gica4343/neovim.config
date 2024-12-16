@@ -10,6 +10,7 @@ vim.g.markdown_recommended_style = 0
 vim.keymap.set("n", "<leader>e", ":noh<CR>", {})
 vim.opt.termguicolors = true
 vim.opt.guicursor = ""
+vim.cmd("set nocursorline")
 --
 --
 --
@@ -57,7 +58,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme rose-pine-moon]]
+vim.cmd[[colorscheme gruber-darker]]
 --
 --
 --

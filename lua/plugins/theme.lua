@@ -58,7 +58,16 @@ return {
   {
     'tanvirtin/monokai.nvim',
     config = function()
-      require("monokai").setup{}
+      require("monokai").setup {}
     end,
+  },
+  {
+    'blazkowolf/gruber-darker.nvim',
+    opts = {
+      bold = false,
+      italic = {
+        strings = false,
+      },
+    }
   }
 }
