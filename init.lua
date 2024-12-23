@@ -60,7 +60,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme rose-pine-moon]]
+vim.cmd[[colorscheme gruber-darker]]
 --
 --
 --
