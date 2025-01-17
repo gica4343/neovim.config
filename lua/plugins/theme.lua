@@ -13,6 +13,10 @@ return {
     priority = 1000,
     config = function()
       require 'nordic'.setup {
+        transparent = {
+          bg = true,
+          float = true,
+        },
       }
       require("nordic").load()
     end,
@@ -78,6 +82,14 @@ return {
         -- or refer to the configuration section
         -- for configuration options
       }
+    end,
+  },
+  {
+    'aliqyan-21/darkvoid.nvim',
+    config = function ()
+      require("darkvoid").setup({
+        transparent = true;
+      })
     end,
   }
 }
