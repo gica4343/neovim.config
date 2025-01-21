@@ -1,11 +1,11 @@
 return {
   {
     "EdenEast/nightfox.nvim",
-   -- opts = {
-   --   options = {
-   --     transparent = true,
-   --   },
-   -- },
+    opts = {
+      options = {
+        transparent = true,
+      },
+    },
   },
   {
     "AlexvZyl/nordic.nvim",
@@ -17,6 +17,7 @@ return {
           bg = true,
           float = true,
         },
+        italics = false,
       }
       require("nordic").load()
     end,
@@ -86,9 +87,9 @@ return {
   },
   {
     'aliqyan-21/darkvoid.nvim',
-    config = function ()
+    config = function()
       require("darkvoid").setup({
-        transparent = true;
+        transparent = true,
       })
     end,
   }
