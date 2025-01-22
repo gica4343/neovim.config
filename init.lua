@@ -1,7 +1,7 @@
 vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.cmd("set tabstop=4")
+vim.cmd("set softtabstop=4")
+vim.cmd("set shiftwidth=4")
 vim.wo.relativenumber = true
 vim.g.mapleader = " "
 vim.wo.fillchars = "eob: "
@@ -59,7 +59,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme nightfox]]
+vim.cmd[[colorscheme gruber-darker]]
 --
 --
 --

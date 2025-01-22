@@ -92,5 +92,13 @@ return {
         transparent = true,
       })
     end,
-  }
+  },
+  {
+    'Mofiqul/vscode.nvim',
+    config = function()
+      require('vscode').setup({
+        transparent = true
+      })
+    end,
+  },
 }
