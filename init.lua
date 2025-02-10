@@ -59,7 +59,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme gruber-darker]]
+vim.cmd[[colorscheme onedark]]
 --
 --
 --
