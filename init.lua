@@ -94,3 +94,12 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { noremap = true })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { noremap = true })
 vim.keymap.set('n', '<space>d', vim.diagnostic.open_float, { noremap = true })
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { noremap = true })
+
+--Stuff--
+vim.keymap.set({'n', 'v'}, '<leader>y', [["+y]]);
+vim.keymap.set(
+    "n",
+    "<leader>ee",
+    "i#include <iostream><CR><CR>using namespace std;<CR><CR>int main() {<CR><CR>}<Esc>ki<Tab>"
+)
+
