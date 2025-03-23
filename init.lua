@@ -59,7 +59,7 @@ config.setup({
 --
 --
 -- Theme
-vim.cmd[[colorscheme tender]]
+vim.cmd[[colorscheme onedark]]
 --
 --
 --
