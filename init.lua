@@ -68,19 +68,6 @@ vim.keymap.set("n", "<leader>g", ":Glow<return>")
 --
 --
 --
--- Harpoon
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
-
-vim.keymap.set("n", "<leader>m", mark.add_file)
-vim.keymap.set("n", "<leader>h", ui.toggle_quick_menu)
-
-vim.keymap.set("n", "<C-t>", function() ui.nav_file(1) end)
-vim.keymap.set("n", "<C-n>", function() ui.nav_file(2) end)
-vim.keymap.set("n", "<C-m>", function() ui.nav_file(3) end)
---vim.keymap.set("n", "<C-m-->", function() ui.nav_file(4) end)
-
-
 -- Lsp --
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { noremap = true })
@@ -99,7 +86,6 @@ vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { noremap = true })
 vim.keymap.set({'n', 'v'}, '<leader>y', [["+y]]);
 vim.keymap.set(
     "n",
-    "<leader>ee",
+    "<leader>ce",
     "i#include <iostream><CR><CR>using namespace std;<CR><CR>int main() {<CR><CR>}<Esc>ki<Tab>"
 )
-
